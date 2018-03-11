@@ -1,0 +1,8 @@
+{
+  "short_name": "Carlos Sechi",
+  "name": "Carlos Sechi",
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#000000",
+  "display": "standalone",
+  "theme_color": "#fff"
+}
