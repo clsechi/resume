@@ -1,0 +1,17 @@
+.icon {
+  margin: 15px;
+  width: 2.5em;
+  border: 0;
+}
+
+.title {
+  margin-top: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
