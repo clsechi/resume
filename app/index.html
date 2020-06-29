@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Passion for developing solutions to solve challenges faced by others">
+  <meta name="author" content="Carlos Sechi">
+  <meta name="theme-color" content="#000000">
+
+  <title>Carlos Sechi | Software Engineer</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="apple-touch-icon" href="/static/icons/apple-touch-icon-180x180.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <link rel="preconnect" href="https://storage.googleapis.com" crossorigin>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115526374-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-115526374-1');
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">Carlos Sechi</h1>
+    <h4>Software Engineer</h4>
+    <h5>São Paulo, Brazil</h5>
+    <h5>carlossechi@hotmail.com</h5>
+    <p>Passion for developing solutions to solve challenges faced by others.</p>
+    <p>
+      Apart from being a developer, I enjoy part of my free time with
+      friends and family. Also like to go to the gym, that's a good place
+      to relax and put my mind in order.
+    </p>
+    <p>
+      When in house, I like to watch some movies and tv series, listen
+      to music and podcasts and spend the rest of my time working on
+      personal projects, learning about the latest technolgy
+      advancements in the development world.
+    </p>
+    <p>Experiences, education and skills on LinkedIn.</p>
+    <p>All my projects can be found on GitHub and GitLab.</p>
+    <p>You can contact me on Twitter.</p>
+    <div class="text-center">
+      <a href="https://www.linkedin.com/in/carlossechi" target="_blank" rel="noopener" title="linkedin">
+        <img src="assets/linkedin.svg" alt="linkedin icon" class="icon">
+      </a>
+      <a href="https://github.com/clsechi" target="_blank" rel="noopener" title="github">
+        <img src="assets/github.svg" alt="github icon" class="icon">
+      </a>
+      <a href="https://gitlab.com/clsechi" target="_blank" rel="noopener" title="gitlab">
+        <img src="assets/gitlab.svg" alt="gitlab icon" class="icon">
+      </a>
+      <a href="https://twitter.com/carlossechi" target="_blank" rel="noopener" title="twitter">
+        <img src="assets/twitter.svg" alt="twitter icon" class="icon">
+      </a>
+    </div>
+  </div>
+
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js');
+    });
+  }
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+  });
+  </script>
+</body>
+
+</html>
