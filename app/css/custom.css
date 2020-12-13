@@ -1,15 +1,92 @@
-.icon {
-  margin: 15px;
-  width: 2.5em;
-  border: 0;
+html {
+  font-size: 62.5%;
 }
 
-.title {
-  margin-top: 50px;
+body {
+  background-color: #181A1B;
+  color: #D3CFC9;
+  font-size: 1.5em;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h4, h5 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 4.0rem;
+  line-height: 1.2;
+  letter-spacing: -.1rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: -.08rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: -.05rem;
+}
+
+@media (min-width: 550px) {
+  h1 {
+    font-size: 5.0rem;
+  }
+  h4 {
+    font-size: 3.0rem;
+  }
+  h5 {
+    font-size: 2.4rem;
+  }
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 2.5rem;
 }
 
 a {
   text-decoration: none;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0;
+  }
+}
+
+@media (min-width: 550px) {
+  .container {
+    width: 80%;
+  }
+}
+
+.icon {
+  margin: 15px;
+  width: 4.0rem;
+  border: 0;
+  filter: invert(99%) sepia(2%) saturate(966%) hue-rotate(320deg) brightness(84%) contrast(95%);
+}
+
+.title {
+  margin-top: 50px;
 }
 
 .text-center {
