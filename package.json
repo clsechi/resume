@@ -3,7 +3,10 @@
   "version": "2.0.0",
   "description": "My resume",
   "scripts": {
-    "lint": "npx cspell app/index.html",
+    "lint": "npm run lint:spell && npm run lint:css",
+    "lint:css": "npx stylelint \"app/**/*.css\"",
+    "lint:css:fix": "npx stylelint \"app/**/*.css\" --fix",
+    "lint:spell": "npx cspell \"app/**/*.html\" \"./*.md\"",
     "build": "npx gulp",
     "deploy": "npm run build && firebase deploy --only hosting"
   },
@@ -24,7 +27,9 @@
     "gulp-csso": "^4.0.1",
     "gulp-htmlmin": "^5.0.1",
     "gulp-size": "^3.0.0",
-    "husky": "^4.3.5",
+    "husky": "^4.3.6",
+    "stylelint": "^13.8.0",
+    "stylelint-config-standard": "^20.0.0",
     "workbox-build": "^5.1.4"
   },
   "husky": {
