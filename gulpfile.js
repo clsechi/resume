@@ -8,29 +8,11 @@ const htmlmin = require('gulp-htmlmin');
 const size = require('gulp-size');
 const del = require('del');
 const fs = require('fs');
-const workboxBuild = require('workbox-build');
 
 const sizeFactory = (title) => size({
   title,
   showFiles: true,
 });
-
-const sw = () => {
-  return workboxBuild.injectManifest({
-    swSrc: 'app/sw.js',
-    swDest: 'dist/sw.js',
-    globDirectory: 'dist',
-    globPatterns: [
-      '**\/*.{js,css,html,svg,ico}',
-    ],
-    globIgnores: [
-      '404.html',
-    ],
-  }).then(({count, size: finalSize, warnings}) => {
-    warnings.forEach(console.warn);
-    console.log(`${count} files will be precached, totaling ${finalSize} bytes.`);
-  });
-};
 
 const html = () => {
   return src('app/*.html')
@@ -78,4 +60,4 @@ exports.css = css;
 exports.html = html;
 exports.watcher = watcher;
 exports.clean = clean;
-exports.default = series(clean, html, css, assets, static, copy, sw);
+exports.default = series(clean, html, css, assets, static, copy);
