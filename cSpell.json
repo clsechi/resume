@@ -9,7 +9,8 @@
       "linkedin",
       "gitlab",
       "beforeinstallprompt",
-      "TODO's"
+      "TODO's",
+      "Sidekiq"
   ],
   "flagWords": []
 }
