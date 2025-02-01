@@ -7,14 +7,13 @@
     "lint:css": "npx stylelint \"app/**/*.css\"",
     "lint:css:fix": "npx stylelint \"app/**/*.css\" --fix",
     "lint:spell": "npx cspell \"app/**/*.html\" \"./*.md\"",
-    "build": "npx gulp",
-    "deploy": "npm run build && firebase deploy --only hosting"
+    "build": "npx gulp"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/clsechi/resume.git"
   },
-  "author": "Carlos Sechi (carlossechi@hotmail.com)",
+  "author": "Carlos Sechi (carlos@sechi.dev)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/clsechi/resume/issues"
